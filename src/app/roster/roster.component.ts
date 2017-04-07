@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Player } from '../player.model';
 import { Router } from '@angular/router';
 import { PlayerService } from '../player.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-roster',
@@ -11,7 +12,7 @@ import { PlayerService } from '../player.service';
 })
 
 export class RosterComponent implements OnInit {
-  players: Player[];
+  players: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private playerService: PlayerService) { }
 
