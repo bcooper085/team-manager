@@ -15,6 +15,9 @@ export class PlayerDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.playerId = parseInt(urlParameters['id']);
+    });
   }
 
 }
