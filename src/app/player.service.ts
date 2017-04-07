@@ -4,7 +4,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class PlayerService {
-  albums: FirebaseListObservable<any[]>;
+  players: FirebaseListObservable<any[]>;
 
   constructor(private angularFire: AngularFire) {
     this.players = angularFire.database.list('players');
@@ -12,5 +12,13 @@ export class PlayerService {
 
   getPlayers() {
     return this.players;
+  }
+
+  addPlayer(newPlayer: Player) {
+    this.players.push(newPlayer);
+  }
+
+  getPlayerById(playerId: number){
+
   }
 }

@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Player to Roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+        <input #newName placeholder="Player Name">
+        <br>
+        <input #newRank placeholder="Player Rank">
+        <br>
+        <input #newHandicap placeholder="Player Handicap">
+        <br>
+        <input #newEarnings placeholder="Total Earning">
+    </div>
+    <button (click)="submitForm(newName.value, newRank.value, newHandicap.value, newEarnings.value); newName.value=''; newRank.value=''; newHandicap.value=''; newEarnings.value=''">Add Player</button>
+  </div>
+</div>
