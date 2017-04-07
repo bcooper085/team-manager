@@ -2,7 +2,12 @@
   <h1>Courgar Golf Roster</h1>
 </div>
 
-<div *ngFor="let player of players | async" class="panel panel-default">
+<select class="categoryOption" (change)="onChange($event.target.value)" class="btn btn-info">
+    <option value="allPlayers">All Players</option>
+    <option value="topTen">Top Players</option>
+</select>
+
+<div *ngFor="let player of players | async | ranking:filterByRank" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(player)">Player: {{player.name}}</h3>
     <h4>Ranking: {{player.rank}}</h4>

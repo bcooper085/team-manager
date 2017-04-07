@@ -1,3 +1,7 @@
+<div>
+  <app-roster></app-roster>
+</div>
+
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Add New Player to Roster</h3>
@@ -12,10 +16,6 @@
         <br>
         <input #newEarnings placeholder="Total Earning">
     </div>
-    <button (click)="submitForm(newName.value, newRank.value, newHandicap.value, newEarnings.value); newName.value=''; newRank.value=''; newHandicap.value=''; newEarnings.value=''">Add Player</button>
+    <button class="btn btn-success" (click)="submitForm(newName.value, newRank.value, newHandicap.value, newEarnings.value); newName.value=''; newRank.value=''; newHandicap.value=''; newEarnings.value=''">Add Player</button>
   </div>
-</div>
-
-<div>
-  <app-roster></app-roster>
 </div>

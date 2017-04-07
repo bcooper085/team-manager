@@ -12,6 +12,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { RankingPipe } from './ranking.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     AboutComponent,
     PlayerDetailComponent,
     AdminComponent,
-    EditPlayerComponent
+    EditPlayerComponent,
+    RankingPipe
   ],
   imports: [
     BrowserModule,
