@@ -16,7 +16,7 @@ export class AdminComponent {
 
   submitForm(name: string, rank: number, handicap: number, earnings: number) {
     var newPlayer: Player = new Player(name, rank, handicap, earnings);
-    this.PlayerService.addPlayer(newPlayer);
+    this.playerService.addPlayer(newPlayer);
   }
 
 }

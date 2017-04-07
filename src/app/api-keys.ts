@@ -5,4 +5,4 @@ export var masterFirebaseConfig = {
   projectId: "cougar-golf",
   storageBucket: "cougar-golf.appspot.com",
   messagingSenderId: "66707236831"
-  };
+};

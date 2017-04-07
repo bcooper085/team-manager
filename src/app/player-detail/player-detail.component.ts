@@ -12,16 +12,16 @@ import { PlayerService } from '../player.service';
 })
 
 export class PlayerDetailComponent implements OnInit {
-  playerId: number;
-  playerToDisplay: Player;
+  playerId: string;
+  playerToDisplay;
 
 
   constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.playerId = parseInt(urlParameters['id']);
+      this.playerId = urlParameters['id'];
     });
-    this.playerToDisplay = this. playerService.getPlayerById(this.playerId);
+    this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
   }
 }

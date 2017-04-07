@@ -1,6 +1,8 @@
-<div class="panel-body">
-  <h3>{{player.name}}</h3>
-  <h4>{{player.rank}}</h4>
-  <h3>{{player.handicap}}</h3>
-  <h4>{{player.earnings}}</h4>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h3>Player: {{(playerToDisplay | async)?.name}}</h3>
+    <h4>Handicap: {{(playerToDisplay  | async)?.handicap}}</h4>
+    <h4>Ranking: {{(playerToDisplay  | async)?.rank}}</h4>
+    <h4>Earnings: {{(playerToDisplay  | async)?.earnings}}</h4>
+  </div>
 </div>
