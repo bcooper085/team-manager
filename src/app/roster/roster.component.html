@@ -2,9 +2,15 @@
   <h1>Courgar Golf Roster</h1>
 </div>
 
-<div *ngFor="let player of players | async" (click)="goToDetailPage(player)" class="panel panel-default">
+<div *ngFor="let player of players | async" class="panel panel-default">
   <div class="panel-body">
-    <h3>{{player.name}}</h3>
-    <h4>{{player.rank}}</h4>
+    <h3 (click)="goToDetailPage(player)">Player: {{player.name}}</h3>
+    <h4>Ranking: {{player.rank}}</h4>
+    <div *ngIf="currentRoute === '/admin'">
+      <h4>Handicap: {{player.handicap}}</h4>
+      <h4>Earnings: {{player.earnings}}</h4>
+      <hr>
+      <app-edit-player [selectedPlayer]="player"></app-edit-player>
+    </div>
   </div>
 </div>
