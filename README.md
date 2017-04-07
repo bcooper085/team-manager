@@ -1,10 +1,18 @@
-# Team Manager
+# Cougar Golf
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Project Description
 
+This site features Cougar Golf Academy. Allows admin to add, edit and delete players. Also able to filter by top 10 players.
+
 ## Setup Instructions
+
+Git clone project
+npm install
+api key is public for easy testing
+bower install bootstrap --save
+ng serve to view
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -13,7 +21,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Build By Brandon Cooper
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
@@ -36,4 +44,7 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 ## Author
 
-Brandon Cooper
+Licensed under the MIT License.
+
+<a href="https://github.com/bcooper085/team-manager">Github</a>
+Copyright (c) 2017 Copyright Brandon Cooper, All Rights Reserved.
