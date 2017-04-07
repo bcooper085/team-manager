@@ -1,12 +1,12 @@
 {
-  "name": "online-store",
+  "name": "team-manager",
   "description": "",
   "main": "",
   "authors": [
     "brandon <bcooper085@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/bcooper085/angular-cli-setup",
   "ignore": [
     "**/.*",
     "node_modules",
