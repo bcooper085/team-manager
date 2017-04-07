@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-roster',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class RosterComponent  {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  players: Player[] = [
+
+  ]
+
+  goToDetailPage(clickedPlayer: Player) {
+   this.router.navigate(['players', clickedPlayer.id]);
+ };
 
 }

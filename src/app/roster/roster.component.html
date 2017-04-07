@@ -2,7 +2,7 @@
   <h1>Courgar Golf Roster</h1>
 </div>
 
-<div *ngFor="let player of players" class="panel panel-default">
+<div *ngFor="let player of players" (click)="goToDetailPage(player)" class="panel panel-default">
   <div class="panel-body">
     <h3>{{player.name}}</h3>
     <h4>{{player.rank}}</h4>
